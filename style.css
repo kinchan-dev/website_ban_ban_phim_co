@@ -1,2 +1,59 @@
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif, "Font Awesome";
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 50px;
+  height: 70px;
+  align-items: center;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.logo {
+  flex: 0.5;
+}
+.logo > img {
+  width: 80%;
+  padding-left: 20px;
+}
+.menu {
+  flex: 2;
+  display: flex;
+}
+.menu > li {
+  padding: 0 16px;
+}
+.menu > li a {
+  font-size: 14px;
+  padding-left: 10px;
+}
+.others {
+  flex: 1.4;
+  display: flex;
+}
+.others > li {
+  padding: 0 5px;
+  font-size: 14px;
+}
+.others > li:first-child {
+  position: relative;
+}
+.others > li:first-child input {
+  width: 85%;
+  border: none;
+  border-bottom: 1px solid #333;
+}
+.others > li:last-child {
+  padding-left: 50px;
+}
+.others .account {
+  padding-left: 40px;
 }
