@@ -30,10 +30,30 @@ a {
 }
 .menu > li {
   padding: 0 16px;
+  position: relative;
+}
+.menu > li:hover .sub-menu {
+  visibility: visible;
+  top: 40px;
+}
+
+.sub-menu {
+  position: absolute;
+  width: 150px;
+  border: 1px solid #000;
+  padding: 10px 0px 10px 10px;
+
+  visibility: hidden;
+  top: 50px;
+  transition: 0.2s;
 }
 .menu > li a {
   font-size: 14px;
   padding-left: 10px;
+  color: #000;
+  font-weight: bold;
+  line-height: 40px;
+  display: block;
 }
 .others {
   flex: 1.4;
@@ -43,8 +63,13 @@ a {
   padding: 0 5px;
   font-size: 14px;
 }
+.others > li a {
+  color: #000;
+  font-weight: bold;
+}
 .others > li:first-child {
   position: relative;
+  padding-left: 60px;
 }
 .others > li:first-child input {
   width: 85%;
@@ -52,7 +77,7 @@ a {
   border-bottom: 1px solid #333;
 }
 .others > li:last-child {
-  padding-left: 50px;
+  padding-left: 40px;
 }
 .others .account {
   padding-left: 40px;
