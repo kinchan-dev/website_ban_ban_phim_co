@@ -21,7 +21,7 @@ a {
   flex: 0.5;
 }
 .logo > img {
-  width: 80%;
+  width: 60%;
   padding-left: 20px;
 }
 .menu {
@@ -48,7 +48,7 @@ a {
   transition: 0.2s;
 }
 .menu > li a {
-  font-size: 14px;
+  font-size: 12px;
   padding-left: 10px;
   color: #000;
   font-weight: bold;
@@ -61,7 +61,7 @@ a {
 }
 .others > li {
   padding: 0 5px;
-  font-size: 14px;
+  font-size: 12px;
 }
 .others > li a {
   color: #000;
@@ -69,7 +69,7 @@ a {
 }
 .others > li:first-child {
   position: relative;
-  padding-left: 60px;
+  padding-left: 10px;
 }
 .others > li:first-child input {
   width: 85%;
@@ -81,4 +81,35 @@ a {
 }
 .others .account {
   padding-left: 40px;
+}
+.aspect-ratio-169 {
+  display: block;
+  position: relative;
+  padding-top: 56.25%;
+  transition: 0.3s;
+  /* padding-bottom: 10px; */
+}
+
+.aspect-ratio-169 img {
+  display: block;
+  position: absolute;
+  width: 50%;
+  height: 80%;
+  top: 0;
+  left: 0;
+}
+.dot-container {
+  position: absolute;
+  height: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.dot {
+  height: 18px;
+  width: 18px;
+  background-color: #333;
+  border-radius: 50%;
+  margin-right: 12px;
 }
