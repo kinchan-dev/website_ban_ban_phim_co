@@ -29,26 +29,60 @@ a {
   display: flex;
 }
 .menu > li {
-  padding: 0 16px;
+  padding: 0 8px;
   position: relative;
 }
-.menu > li:hover .sub-menu {
+.menu > li:hover .sub-menu-1 {
+  display: block;
   visibility: visible;
   top: 40px;
 }
+.menu > li:hover .sub-menu-2 {
+  display: block;
+  visibility: visible;
+  top: 40px;
+}
+/* .others > li:hover .sub-account {
+  display: block;
+  visibility: visible;
+  top: 40px;
+} */
 
-.sub-menu {
+.sub-menu-1 {
+  display: none;
+  background-color: white;
   position: absolute;
-  width: 150px;
+  width: 170px;
   border: 1px solid #000;
-  padding: 10px 0px 10px 10px;
-
+  padding: 5px 0px 5px 0px;
   visibility: hidden;
   top: 50px;
   transition: 0.2s;
 }
+.sub-menu-2 {
+  display: none;
+  background-color: white;
+  position: absolute;
+  width: 170px;
+  border: 1px solid #000;
+  padding: 5px 0px 5px 0px;
+  visibility: hidden;
+  top: 50px;
+  transition: 0.2s;
+}
+/* .sub-account {
+  display: none;
+  background-color: white;
+  position: absolute;
+  width: 150px;
+  border: 1px solid #000;
+  padding: 5px 0px 5px 0px;
+  visibility: hidden;
+  top: 50px;
+  transition: 0.2s;
+} */
 .menu > li a {
-  font-size: 12px;
+  font-size: 14px;
   padding-left: 10px;
   color: #000;
   font-weight: bold;
@@ -61,11 +95,21 @@ a {
 }
 .others > li {
   padding: 0 5px;
-  font-size: 12px;
+  font-size: 14px;
+  position: relative;
+}
+.sub-account {
+  position: absolute;
+  width: 150px;
+  border: 1px solid #333;
+  padding: 10px 0px 10px 20px;
+  background-color: white;
 }
 .others > li a {
   color: #000;
   font-weight: bold;
+  display: block;
+  line-height: 35px;
 }
 .others > li:first-child {
   position: relative;
@@ -75,45 +119,31 @@ a {
   width: 85%;
   border: none;
   border-bottom: 1px solid #333;
+  position: relative;
 }
+
 .others > li:last-child {
   padding-left: 40px;
 }
 .others .account {
   padding-left: 40px;
 }
-/* .aspect-ratio-169 {
-  display: block;
+/* .others > li {
+  padding: 0 8px;
   position: relative;
-  padding-top: 56.25%;
-  transition: 0.3s;
-  padding-bottom: 10px;
 } */
-
-/* .aspect-ratio-169 img {
+/* .sub-account > li a {
+  font-size: 14px;
+  padding-left: 10px;
+  color: #000;
+  font-weight: bold;
+  line-height: 40px;
   display: block;
-  position: absolute;
-  width: 50%;
-  height: 80%;
-  top: 0;
-  left: 0;
 } */
-/* .dot-container {
-  position: absolute;
-  height: 10px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
-.dot {
-  height: 18px;
-  width: 18px;
-  background-color: #333;
-  border-radius: 50%;
-  margin-right: 12px;
+/* .other > li > i {
+  position: relative
 } */
 .image-keyboard {
-  width: 10%;
-  height: 50%;
+  width: 100%;
+  height: 100%;
 }
