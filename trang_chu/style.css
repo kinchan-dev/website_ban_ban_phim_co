@@ -148,7 +148,7 @@ footer {
 
 .footer-section {
   flex: 1;
-  margin: 0 20px;
+  margin: 0 10px;
 }
 a {
   text-decoration: none;
@@ -166,7 +166,7 @@ h3 {
 }
 
 p {
-  font-size: 14px;
+  font-size: 15px;
   color: #333;
   line-height: 1.6;
   margin-bottom: 10px;
@@ -179,6 +179,8 @@ ul {
 
 ul li {
   margin-bottom: 5px;
+  line-height: 30px;
+  
 }
 
 input[type="email"] {
@@ -188,9 +190,11 @@ input[type="email"] {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+
 .customer-policy a {
   color: black;
 }
+
 .company-info a {
   color: black;
 }
@@ -223,15 +227,17 @@ button:hover {
 
 .footer-copyright {
   text-align: center;
-  background-color: #f1f1f1; /* Light grey background */
+  background-color: #f1f1f1; 
   padding: 20px;
 }
 
 .footer-copyright p {
   font-size: 14px;
-  color: #333; /* Darker grey text */
+  color: #333; 
   margin: 0;
 }
+
+
 
 @media (max-width: 768px) {
   .container {
