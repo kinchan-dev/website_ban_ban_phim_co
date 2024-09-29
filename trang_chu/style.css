@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif, "Font Awesome";
 }
+
+/* MENU */
+
 header {
   display: flex;
   justify-content: space-between;
@@ -42,12 +45,14 @@ a {
   visibility: visible;
   top: 40px;
 }
-/* .others > li:hover .sub-account {
+.menu > li a {
+  font-size: 14px;
+  padding-left: 10px;
+  color: #000;
+  font-weight: bold;
+  line-height: 40px;
   display: block;
-  visibility: visible;
-  top: 40px;
-} */
-
+}
 .sub-menu-1 {
   display: none;
   background-color: white;
@@ -70,25 +75,6 @@ a {
   top: 50px;
   transition: 0.2s;
 }
-/* .sub-account {
-  display: none;
-  background-color: white;
-  position: absolute;
-  width: 150px;
-  border: 1px solid #000;
-  padding: 5px 0px 5px 0px;
-  visibility: hidden;
-  top: 50px;
-  transition: 0.2s;
-} */
-.menu > li a {
-  font-size: 14px;
-  padding-left: 10px;
-  color: #000;
-  font-weight: bold;
-  line-height: 40px;
-  display: block;
-}
 .others {
   flex: 1.4;
   display: flex;
@@ -98,12 +84,19 @@ a {
   font-size: 14px;
   position: relative;
 }
+.others > li:hover .sub-account {
+  display: block;
+}
 .sub-account {
   position: absolute;
   width: 150px;
   border: 1px solid #333;
   padding: 10px 0px 10px 20px;
   background-color: white;
+  display: none;
+}
+.others ul {
+  padding-left: 20px;
 }
 .others > li a {
   color: #000;
@@ -120,30 +113,132 @@ a {
   border: none;
   border-bottom: 1px solid #333;
   position: relative;
+  padding-top: 8px;
 }
-
+.search i {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
 .others > li:last-child {
   padding-left: 40px;
 }
 .others .account {
   padding-left: 40px;
 }
-/* .others > li {
-  padding: 0 8px;
-  position: relative;
-} */
-/* .sub-account > li a {
-  font-size: 14px;
-  padding-left: 10px;
-  color: #000;
-  font-weight: bold;
-  line-height: 40px;
-  display: block;
-} */
-/* .other > li > i {
-  position: relative
-} */
 .image-keyboard {
   width: 100%;
   height: 100%;
+}
+
+/* footer  */
+
+footer {
+  background-color: #f4f4f4;
+  padding: 40px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 20px;
+}
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.customer-policy a {
+  color: black;
+}
+.company-info a {
+  color: black;
+}
+
+button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+.payment-methods i {
+  width: 40px;
+  margin-right: 10px;
+  padding: 20px 0px 0px 50px;
+  font-size: 30px;
+}
+
+.social-icons i {
+  width: 30px;
+  margin-right: 10px;
+  font-size: 30px;
+}
+
+.footer-copyright {
+  text-align: center;
+  background-color: #f1f1f1; /* Light grey background */
+  padding: 20px;
+}
+
+.footer-copyright p {
+  font-size: 14px;
+  color: #333; /* Darker grey text */
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .footer-section {
+    margin: 20px 0;
+  }
 }
