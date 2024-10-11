@@ -7,6 +7,8 @@
 :root {
   --main-text-font: Arial, Helvetica, sans-serif, "Font Awesome";
   --main-color: #dddddd;
+  --color-before-hover: rgba(130, 204, 221, 1);
+  --color-after-hover: rgba(96, 163, 188, 1);
 }
 
 /* ----------------------------------------------------------------------------------MENU -----------------------------------------------------------------------------------------------------------*/
@@ -203,7 +205,7 @@ a {
   color: #333333;
 }
 .cartegory-right-content-item img {
-  width: 100%;
+  width: 90%;
 }
 .cartegory-right-content-item {
   font-size: 13px;
@@ -353,8 +355,15 @@ a {
   font-family: var(--main-text-font);
   font-size: 15px;
 }
+.product-content-right-product-policy a {
+  color: var(--color-before-hover);
+}
+.product-content-right-product-policy a:hover {
+  color: var(--color-after-hover);
+}
 .product-content-right-bottom {
   padding-top: 40px;
+  padding-left: 20px;
   border-top: 1px solid var(--main-color);
   position: relative;
 }
@@ -585,6 +594,40 @@ a {
 .delivery-content-right table td:first-child {
   text-align: left;
 }
+/* ---------------------------------------------CHÍNH SÁCH BẢO HÀNH ---------------------*/
+.policy {
+  width: 80%;
+  margin: 10px auto;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.policy h2 {
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+.policy p {
+  margin-bottom: 10px;
+}
+
+.policy ul {
+  margin-bottom: 20px;
+  list-style: square;
+  padding-left: 20px;
+}
+
+.policy ul ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.policy li {
+  margin-bottom: 10px;
+}
 
 /* ------------------------------------------------------------------------------------FOOTER--------------------------------------------------------------------------------------------------------*/
 
@@ -648,6 +691,9 @@ input[type="email"] {
 .customer-policy a {
   color: black;
 }
+.customer-policy a:hover {
+  color: var(--color-after-hover);
+}
 
 .company-info a {
   color: black;
@@ -690,8 +736,11 @@ input[type="email"] {
   color: #333;
   margin: 0;
 }
-.footer-section company-info a img {
-  width: 50px;
+.company-info a img {
+  width: 70%;
+}
+.form button {
+  margin-left: 80px;
 }
 
 /* @media (max-width: 768px) {
