@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="KICAP - BÀN PHÍM CƠ" content="width=device-width, initial-scale=1.0" />
-    <title>GIAO HÀNG</title>
+    <title>TRANG CHỦ</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="website icon" type="png" href="images/icon-title.jpg" />
@@ -34,7 +34,6 @@
           <a href="">VỀ KICAP <i class="fa fa-caret-down" aria-hidden="true"></i></a>
           <ul class="sub-menu-2">
             <li><a href="introduction.html">Giới thiệu</a></li>
-
             <li><a href="policy.html">Chính sách bảo hành</a></li>
             <li><a href="doi-tra.html">Chính sách đổi trả</a></li>
           </ul>
@@ -62,113 +61,81 @@
         <img class="image-keyboard" src="images/slide6.jpg" alt="" />
       </div>
     </section>
-    <!-------------------------------------- DELIVERY ----------------------------------------------->
-    <section class="delivery">
-      <div class="container-delivery">
-        <div class="delivery-top-wrap">
-          <div class="delivery-top">
-            <div class="delivery-top-delivery delivery-top-item">
+    <!---------------------------------------- PAYMENT----------------------------------------------->
+
+    <section class="payment">
+      <div class="container">
+        <div class="payment-top-wrap">
+          <div class="payment-top">
+            <div class="payment-top-cart payment-top-item">
               <i class="fa fa-shopping-cart" aria-hidden="true"></i>
             </div>
-            <div class="delivery-top-address delivery-top-item">
+            <div class="payment-top-cart payment-top-item">
               <i class="fa fa-map-marker" aria-hidden="true"></i>
             </div>
-            <div class="delivery-top-payment delivery-top-item">
+            <div class="payment-top-payment payment-top-item">
               <i class="fa fa-money" aria-hidden="true"></i>
             </div>
           </div>
         </div>
       </div>
-      <div class="container-delivery">
-        <div class="delivery-content row">
-          <div class="delivery-content-left">
-            <p>Vui lòng chọn địa chỉ giao hàng</p>
-            <div class="delivery-content-left-signin row">
-              <i class="fa fa-sign-in" aria-hidden="true"></i>
-              <p>Đăng nhập (Nếu bạn đã có tài khoản KICAP)</p>
-            </div>
-            <div class="delivery-content-left-retailer row">
-              <input checked name="loaikhach" type="radio" />
-              <p><span style="font-weight: bold">Khách lẻ</span> (Nếu bạn không muốn lưu lại thông tin)</p>
-            </div>
-            <div class="delivery-content-left-signup row">
-              <input name="loaikhach" type="radio" />
-              <p><span style="font-weight: bold">Đăng kí </span> (Tạo mới tài khoản với thông tin bên dưới)</p>
-            </div>
-            <div class="delivery-content-left-input-top row">
-              <div class="delivery-content-left-input-top-item">
-                <label for="">Họ tên <span style="color: red">*</span></label>
-                <input type="text" />
+      <div class="container">
+        <div class="payment-content row">
+          <div class="payment-content-left">
+            <div class="payment-content-left-method-delivery">
+              <p style="font-weight: bold">Phương thức giao hàng</p>
+              <div class="payment-content-left-method-delivery-item">
+                <input checked type="radio" />
+                <label for="">Giao hàng chuyển phát nhanh</label>
               </div>
-              <div class="delivery-content-left-input-top-item">
-                <label for="">Điện thoại <span style="color: red">*</span></label>
-                <input type="text" />
-              </div>
-              <div class="delivery-content-left-input-top-item">
-                <label for=""> Tỉnh/Tp <span style="color: red">*</span></label>
-                <input type="text" />
-              </div>
-              <div class="delivery-content-left-input-top-item">
-                <label for=""> Quận/Huyện <span style="color: red">*</span></label>
-                <input type="text" />
-              </div>
+              <br />
             </div>
-            <div class="delivery-content-left-input-top-bottom">
-              <label for=""> Địa chỉ <span style="color: red">*</span></label>
-              <input type="text" />
-            </div>
-            <div class="delivery-content-left-button row">
-              <a href="cart.html">
-                <span>&#171;</span>
-                <p>Quay lại giỏ hàng</p>
-              </a>
-              <button><b>THANH TOÁN VÀ GIAO HÀNG</b></button>
+            <div class="payment-content-left-method-payment">
+              <p style="font-weight: bold">Phương thức thanh toán</p>
+              <p>Mọi giao dịch đều được giao dịch và mã hóa. Thông tin thẻ tín dụng sẽ không bao giờ được lưu lại.</p>
+              <div class="payment-content-left-method-payment-item">
+                <input type="radio" name="method-payment" />
+                <label for="">Thanh toán bằng thẻ tín dụng (OnePay)</label>
+              </div>
+              <div class="payment-content-left-method-payment-item-img"></div>
+              <div class="payment-content-left-method-payment-item">
+                <input checked name="method-payment" type="radio" />
+                <label for="">Thanh toán bằng thẻ ATM (OnePay)</label>
+              </div>
+              <div class="payment-content-left-method-payment-item-img"></div>
+              <div class="payment-content-left-method-payment-item">
+                <input name="method-payment" type="radio" />
+                <label for="">Thanh toán MOMO</label>
+              </div>
+              <div class="payment-content-left-method-payment-item-img"></div>
+              <div class="payment-content-left-method-payment-item">
+                <input name="method-payment" type="radio" />
+                <label for="">Thanh Toán COD (Giao hàng mới thanh toán)</label>
+              </div>
             </div>
           </div>
-          <div class="delivery-content-right">
-            <table>
-              <tr>
-                <th>Tên sản phẩm</th>
-                <th>Giảm giá</th>
-                <th>Số lượng</th>
-                <th>Thành tiền</th>
-              </tr>
-              <tr>
-                <td>Bàn phím rk61</td>
-                <td>-30%</td>
-                <td>1</td>
-                <td>
-                  <p>999.999<sup>đ</sup></p>
-                </td>
-              </tr>
-              <tr>
-                <td>Bàn phím rk100</td>
-                <td>-10%</td>
-                <td>1</td>
-                <td>
-                  <p>999.999<sup>đ</sup></p>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold" colspan="3">Tổng :</td>
-                <td style="font-weight: bold">
-                  <p>100.000<sup>đ</sup></p>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold" colspan="3">Thuế VAT :</td>
-                <td style="font-weight: bold">
-                  <p>20.000<sup>đ</sup></p>
-                </td>
-              </tr>
-              <tr>
-                <td style="font-weight: bold" colspan="3">Tổng tiền hàng :</td>
-                <td style="font-weight: bold">
-                  <p>120.000<sup>đ</sup></p>
-                </td>
-              </tr>
-            </table>
+          <div class="payment-content-right">
+            <div class="payment-content-right-button">
+              <input type="text" placeholder="Mã giảm giá/quà tặng" />
+              <button><i class="fa fa-check" aria-hidden="true"></i></button>
+            </div>
+            <div class="payment-content-right-button">
+              <input type="text" placeholder="Mã cộng tác viên" />
+              <button><i class="fa fa-check" aria-hidden="true"></i></button>
+            </div>
+            <div class="payment-content-right-mnv">
+              <select name="" id="">
+                <option value="">Chọn mã nhân viên thân thiết</option>
+                <option value="">Kiên</option>
+                <option value="">Diệp</option>
+                <option value="">Biên</option>
+                <option value="">Khang</option>
+              </select>
+            </div>
           </div>
+        </div>
+        <div class="payment-content-right-payment">
+          <button>Tiếp tục thanh toán</button>
         </div>
       </div>
     </section>
@@ -190,7 +157,7 @@
         <div class="footer-section customer-policy">
           <h3>CHÍNH SÁCH KHÁCH HÀNG</h3>
           <ul>
-            <li><a href="">Chính Sách Bảo Hành</a></li>
+            <li><a href="policy.html" target="_blank">Chính Sách Bảo Hành</a></li>
             <li><a href="">Chính Sách Kiểm Hàng</a></li>
             <li><a href="">Chính Sách Đổi Trả Hàng Hoàn Tiền</a></li>
             <li><a href="">Chính Sách Thanh Toán</a></li>

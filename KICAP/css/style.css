@@ -836,7 +836,112 @@ h4 {
   margin-top: 20px;
   padding-left: 100px;
 }
+/* --------------------------------------------------------PAYMENT ----------------------------------------------------- */
+.payment {
+  padding: 100px 0;
+}
+.payment-top-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.payment-top {
+  height: 2px;
+  width: 70%;
+  background-color: #dddddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0 100px;
+}
+.payment-top-item {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #dddddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+.payment-top-item i {
+  color: #dddddd;
+}
+.payment-top-payment {
+  border: 1px solid #0db7ea;
+}
+.payment-top-payment i {
+  color: #0db7ea;
+}
+.payment-content-left {
+  width: 60%;
+  padding-left: 50px;
+}
+.payment-content-right {
+  width: 40%;
+  border-left: 2px solid #ddd;
+  padding-left: 12px;
+}
+.payment-content-left p,
+label {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif, "Font Awesome";
+  margin-bottom: 5px;
+}
+.payment-content-left-method-delivery-item label {
+  margin-bottom: 50px;
+}
+.payment-content-right-button {
+  display: flex;
+  padding: 12px 0;
+  border-bottom: 1px dashed #dddddd;
+}
+.payment-content-right-button input {
+  height: 30px;
+  width: 200px;
+  margin-right: 100px;
+  padding-left: 12px;
+}
+.payment-content-right-button button {
+  height: 30px;
+  width: 100px;
+  background-color: black;
+  color: var(--main-color);
+  border: none;
+  cursor: pointer;
+}
+.payment-content-right-button button:hover {
+  color: black;
+  background-color: var(--main-color);
+}
 
+.payment-content-right-mnv {
+  margin-top: 20px;
+}
+.payment-content-right-mnv select {
+  height: 30px;
+  width: 200px;
+  color: #75758a;
+  padding-left: 2px;
+}
+.payment-content-right-payment {
+  margin-top: 50px;
+  align-items: center;
+  text-align: center;
+}
+.payment-content-right-payment button {
+  height: 35px;
+  padding: 0 20px;
+  font-size: 12px;
+  color: black;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid black;
+}
+.payment-content-right-payment button:hover {
+  background-color: black;
+  color: #fff;
+}
 /* -------------------------------------------FOOTER--------------------------------------------------------*/
 
 footer {
@@ -856,39 +961,39 @@ footer {
   flex: 1;
   margin: 0 10px;
 }
-a {
+.container-footer a {
   text-decoration: none;
 }
 
-h2 {
+.container-footer h2 {
   font-size: 24px;
   font-weight: bold;
 }
 
-h3 {
+.container-footer h3 {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-p {
+.container-footer p {
   font-size: 15px;
   color: #333;
   line-height: 1.6;
   margin-bottom: 10px;
 }
 
-ul {
+.container-footer ul {
   list-style: none;
   padding: 0;
 }
 
-ul li {
+.container-footer ul li {
   margin-bottom: 5px;
   line-height: 30px;
 }
 
-input[type="email"] {
+.container-footer input[type="email"] {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
