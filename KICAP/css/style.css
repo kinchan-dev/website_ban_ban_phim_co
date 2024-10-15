@@ -913,6 +913,7 @@ label {
 .payment-content-right-button button:hover {
   color: black;
   background-color: var(--main-color);
+  transition: all 0.3s;
 }
 
 .payment-content-right-mnv {
