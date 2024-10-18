@@ -943,6 +943,83 @@ label {
   background-color: black;
   color: #fff;
 }
+/* -------------------------------------------LOGIN ---------------------------------------------------------*/
+.container-login {
+  width: 700px;
+  height: 400px;
+  margin: 0 auto;
+  padding: 50px;
+  align-items: center;
+}
+.container-login a {
+  color: black;
+}
+.container-login a:hover {
+  color: var(--main-color);
+}
+
+.social-login {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+
+.btn-facebook,
+.btn-google {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-facebook {
+  background-color: #3b5998;
+  color: white;
+}
+.btn-facebook:hover {
+  background-color: var(--main-color);
+  color: black;
+}
+
+.btn-google {
+  background-color: #db4a39;
+  color: white;
+}
+.btn-google:hover {
+  background-color: var(--main-color);
+  color: black;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group input {
+  height: 25px;
+}
+#email {
+  margin-left: 24px;
+}
+
+.btn-submit {
+  display: block;
+  width: 100px;
+  height: 40px;
+  margin: 30px 10px 20px 250px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.btn-submit:hover {
+  background-color: var(--main-color);
+  color: black;
+}
+.login-bottom p {
+  margin-bottom: 10px;
+}
 /* -------------------------------------------FOOTER--------------------------------------------------------*/
 
 footer {
